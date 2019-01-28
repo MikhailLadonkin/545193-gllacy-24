@@ -31,7 +31,35 @@
         <li><a href="breadcrumbs-current">Сливочное</a></li>
       </ul>
       <h1 class="page-title">Сливочное мороженое</h1>
-      <!-- Filters will be here -->
+      <section class="filter">
+        <p class="filter-names"><label for="sort-field">Сортировка:</label></p>
+        <select name="sort" id="sort-field">
+          <option selected value="popular">По популярности</option>
+        </select>
+        <p class="filter-names"><label for="price-range">Цена: 100руб. - 500 руб.</label></p>
+        <input type="range" min="0" max="1000" step="50" value="100" id="price-range">
+        <p class="filter-names">Жирность</p>
+        <input type="radio" name="no-fat" id="fat-free"> 
+        <label for="fat-free">0%</label>
+        <input type="radio" checked name="ten" id="till-ten"> 
+        <label for="till-ten">до 10%</label> 
+        <input type="radio" name="thirty" id="till-thirty"> 
+        <label for="till-thirty">до 30%</label> 
+        <input type="radio" name="thirty-plus-fat" id="thirty-plus"> 
+        <label for="thirty-plus">выше 30%</label>
+        <p class="filter-names">Наполнители:</p>
+        <input type="checkbox" checked id="checkbox-chocolate">
+        <label for="checkbox-chocolate">шоколадные</label>
+        <input type="checkbox" checked id="checkbox-sugar">
+        <label for="checkbox-sugar">сахарные присыпки</label>
+        <input type="checkbox" id="checkbox-fruits">
+        <label for="checkbox-fruits">фрукты</label>
+        <input type="checkbox" id="checkbox-syrup">
+        <label for="checkbox-syrup">сиропы</label>
+        <input type="checkbox" id="checkbox-jams">
+        <label for="checkbox-jams">джемы</label>
+        <button class="button-filter">Применить</button>
+      </section>
       <section class="catalog">
         <h2 class="visually-hidden"> Список мороженого </h2>
         <ul class="catalog-list">
@@ -155,14 +183,12 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div class="footer-social">
-        <ul class="social-list">
-          <li><a class="social-button" href="#">Twitter</a></li>
-          <li><a class="social-button" href="#">Instagram</a></li>
-          <li><a class="social-button" href="#">Facebook</a></li>
-          <li><a class="social-button" href="#">VK</a></li>
-        </ul>
-      </div>
+      <ul class="social-list">
+        <li><a class="social-button" href="#">Twitter</a></li>
+        <li><a class="social-button" href="#">Instagram</a></li>
+        <li><a class="social-button" href="#">Facebook</a></li>
+        <li><a class="social-button" href="#">VK</a></li>
+      </ul>
       <div class="footer-documentation">
         <ul>
           <li><a class="docs" href="#">Для поставщиков</a></li>
