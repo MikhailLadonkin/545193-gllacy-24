@@ -18,8 +18,28 @@
         <ul class="user-navigation">
           <li><a class="search" href="#"><img src="img/icons/search.svg" width="17" height="17" alt="Поиск">Поиск</a></li>
           <li><a class="enter" href="#"><img src="img/icons/enter.svg" width="21" height="19" alt="Вход">Вход</a></li>
-          <li><a class="cart" href="#"><img src="img/icons/cart-red.svg" width="21" height="20" alt="Корзина">Пусто</a></li>
+          <li><a class="cart" href="#"><img src="img/icons/cart-red.svg" width="21" height="20" alt="Корзина">2 товара</a></li>
         </ul>
+        <form class="cart-form" action="https://echo.htmlacademy.ru" method="GET">
+          <div class="cart-order">
+            <img src="img/icons/cross-small.svg" width="11" height="11" aria-label="Удалить элемент списка">
+            <p class="cart-form-item">
+              <img src="img/cart-item-orange.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+              <span class="cart-item-description">Пломбир с апельсиновым джемом</span>
+              <span class="order-size">1,5 кг &times; <span class="price-per-kg">200 руб.</span></span>
+              <span class="cart-item-price">300 руб.</span>
+            </p>
+            <img src="img/icons/cross-small.svg" width="11" height="11" aria-label="Удалить элемент списка">
+            <p class="cart-form-item">
+              <img src="img/cart-item-strawberry.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+              <span class="cart-item-description">Клубничный пломбир с присыпкой из белого шоколада</span>
+              <span class="order-size">1,5 кг &times; <span class="price-per-kg">300 руб.</span></span>
+              <span class="cart-item-price">450 руб.</span>
+            </p>
+          </div>
+          <p class="cart-form-total"><b>Итого:750 руб.</b></p>
+          <button class="button-orange button-order" type="submit">Оформить заказ</button>
+        </form>
         <p class="schedule">c 10 до 20, ежедневно</p>
         <p class="phone"><a href="#">8 812 450 25-25</a></p>
       </nav>
@@ -34,7 +54,13 @@
         <section class="filter">
           <h2 class="filter-names"><label for="sort-field">Сортировка:</label></h2>
           <select name="sort" id="sort-field">
-            <option selected value="popular">По популярности</option>
+            <option value="popular">По популярности</option>
+            <ul class="sort-menu">
+              <option selected value="sort-popular">по популярности</option>
+              <option value="sort-cheap">сначала недорогие</option>
+              <option value="sort-expensive">сначала дорогие</option>
+              <option value="sort-fat">по жирности</option>
+            </ul>
           </select>
           <h2 class="filter-names"><label for="price-range">Цена: 100руб. - 500 руб.</label></h2>
           <input type="range" min="0" max="1000" step="50" value="100" id="price-range">

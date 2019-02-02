@@ -12,12 +12,38 @@
   			</a>
   			<ul class="site-navigation">
   				<li><a href="inner.html">Каталог</a></li>
+  				<ul class="catalog-menu">
+  					<li><a href="#"><b>Новинки</b></a></li>
+  					<li><a href="#">Сливочное</a></li>
+  					<li><a class="active" href="#">Щербеты</a></li>
+  					<li><a href="#">Фруктовый лед</a></li>
+  					<li><a href="#">Мелорин</a></li>
+  				</ul>
   				<li><a href="#">Доставка и оплата</a></li>
   				<li><a href="#">О компании</a></li>
   			</ul>
   			<ul class="user-navigation">
   				<li><a class="search" href="#"><img src="img/icons/search.svg" width="17" height="17" alt="Поиск">Поиск</a></li>
   				<li><a class="enter" href="#"><img src="img/icons/enter.svg" width="21" height="19" alt="Вход">Вход</a></li>
+  				<form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
+  					<a class="search-form-item" href="#">
+  						<label for="search-form-field">Поиск</label>
+  						<input type="text" name="search-field" id="search-form-field" placeholder="Что ищем?">
+  					</a>
+  				</form>
+  				<form class="enter-form" action="https://echo.htmlacademy.ru" method="post">
+  					<p class="enter-form-item">
+  						<label for="enter-form-email">Электронная почта</label>
+  						<input type="email" name="user-email" id="enter-form-email" placeholder="Электронная почта">
+  					</p>
+  					<p class="enter-form-item">
+  						<label for="enter-form-password">Пароль</label>
+  						<input type="password" name="user-password" id="enter-form-password" placeholder="Пароль">
+  					</p>
+  					<button class="button-orange button-enter" type="submit">Войти</button>
+  					<p class="password-forgotten"><a class="restore" href="#">Забыли пароль?</a></p>
+  					<p class="new-registration"><a class="new-register" href="#">Новая регистрация</a></p>
+  				</form>
   				<li><a class="cart" href="#"><img src="img/icons/cart.svg" width="21" height="20" alt="Корзина">Пусто</a></li>
   			</ul>
   			<p class="schedule">c 10 до 20, ежедневно</p>
@@ -32,13 +58,11 @@
   			<!-- Slider changer -->
   			<button class="button-orange button-add-both">Давайте оба!</button>
   			<section class="special special-raspberry">
-  				<img src="img/special-rasp-background.jpg" width="560" height="229" alt="Малинка даром">
   			 	<h4 class="special-title">Малинка даром!</h4>
   				<p class="special-text">При покупке 2кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
   				<button class="button-orange special-button">Хочу варенье!</button>
   			</section>
   			<section class="special special-chocolate">
-  				<img src="img/special-choco-background.jpg" width="560" height="229" alt="Шоколадки даром">
   				<h4 class="special-title">Шоколадки даром!</h4>
   				<p class="special-text">При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
   				<button class="button-orange special-button">Хочу шоколадки!</button>
@@ -118,6 +142,23 @@
   					<a><b>8 812 450-25-25</b></a>
   					<p>(c 10 до 20 ежедневно)</p>
   					<button class="button-orange button-connect">Форма обратной связи</button>
+  					<form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+  						<h2 class="form-heading">Мы обязательно вам ответим!</h2>
+  						<img src="img/icons/cross-big.svg" width="18" height="17" aria-label="Закрыть форму">
+  						<p class="feedback-form-item">
+  							<label for="feedback-form-name">Имя пользователя</label>
+  							<input type="text" name="user-name" id="feedback-form-name" placeholder="Как вас зовут?">
+  						</p>
+  						<p class="feedback-form-item">
+  							<label for="feedback-form-email">Почта</label>
+  							<input type="email" name="user-email-feedback" id="feedback-form-email" placeholder="Ваша почта для ответа?">
+  						</p>
+  						<p class="feedback-form-item">
+  							<label for="feedback-form-review">Текст отзыва</label>
+        				<textarea name="user-review" id="feedback-form-review" rows="5" placeholder="Напишите что-нибудь..."></textarea>
+     					 </p>
+     					<button class="button-orange button-send" type="submit">Отправить</button>
+  					</form>
   				</div>
   			</article>
   			<footer class="main-footer">
