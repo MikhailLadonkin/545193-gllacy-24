@@ -13,7 +13,7 @@
   			<ul class="site-navigation">
   				<li><a href="inner.html">Каталог</a></li>
   				<ul class="catalog-menu">
-  					<li><a href="#"><b>Новинки</b></a></li>
+  					<li><a href="#">Новинки</a></li>
   					<li><a href="#">Сливочное</a></li>
   					<li><a class="active" href="#">Щербеты</a></li>
   					<li><a href="#">Фруктовый лед</a></li>
@@ -26,23 +26,23 @@
   				<li><a class="search" href="#"><img src="img/icons/search.svg" width="17" height="17" alt="Поиск">Поиск</a></li>
   				<li><a class="enter" href="#"><img src="img/icons/enter.svg" width="21" height="19" alt="Вход">Вход</a></li>
   				<form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
-  					<a class="search-form-item" href="#">
-  						<label for="search-form-field">Поиск</label>
-  						<input type="text" name="search-field" id="search-form-field" placeholder="Что ищем?">
-  					</a>
+  					<label for="search-form-field">Поиск</label>
+  					<input type="text" name="search-field" id="search-form-field" placeholder="Что ищем?">
   				</form>
-  				<form class="enter-form" action="https://echo.htmlacademy.ru" method="post">
-  					<p class="enter-form-item">
-  						<label for="enter-form-email">Электронная почта</label>
-  						<input type="email" name="user-email" id="enter-form-email" placeholder="Электронная почта">
+  				<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+  					<p class="login-form-item">
+  						<label for="login-form-email">Электронная почта</label>
+  						<input type="email" name="user-email" id="login-form-email" placeholder="Электронная почта">
   					</p>
-  					<p class="enter-form-item">
-  						<label for="enter-form-password">Пароль</label>
-  						<input type="password" name="user-password" id="enter-form-password" placeholder="Пароль">
+  					<p class="login-form-item">
+  						<label for="login-form-password">Пароль</label>
+  						<input type="password" name="user-password" id="login-form-password" placeholder="Пароль">
   					</p>
   					<button class="button-orange button-enter" type="submit">Войти</button>
-  					<p class="password-forgotten"><a class="restore" href="#">Забыли пароль?</a></p>
-  					<p class="new-registration"><a class="new-register" href="#">Новая регистрация</a></p>
+  					<div class="login-links">
+	  					<a class="login-link restore" href="#">Забыли пароль?</a>
+	  					<a class="login-link new-register" href="#">Новая регистрация</a>
+  					</div>
   				</form>
   				<li><a class="cart" href="#"><img src="img/icons/cart.svg" width="21" height="20" alt="Корзина">Пусто</a></li>
   			</ul>
@@ -144,7 +144,7 @@
   					<button class="button-orange button-connect">Форма обратной связи</button>
   					<form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
   						<h2 class="form-heading">Мы обязательно вам ответим!</h2>
-  						<img src="img/icons/cross-big.svg" width="18" height="17" aria-label="Закрыть форму">
+  						<button class="form-close" aria-label="Закрыть форму">Закрыть форму</button>
   						<p class="feedback-form-item">
   							<label for="feedback-form-name">Имя пользователя</label>
   							<input type="text" name="user-name" id="feedback-form-name" placeholder="Как вас зовут?">

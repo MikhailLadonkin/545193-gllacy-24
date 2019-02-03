@@ -20,16 +20,16 @@
           <li><a class="enter" href="#"><img src="img/icons/enter.svg" width="21" height="19" alt="Вход">Вход</a></li>
           <li><a class="cart" href="#"><img src="img/icons/cart-red.svg" width="21" height="20" alt="Корзина">2 товара</a></li>
         </ul>
-        <form class="cart-form" action="https://echo.htmlacademy.ru" method="GET">
+        <form class="cart-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="cart-order">
-            <img src="img/icons/cross-small.svg" width="11" height="11" aria-label="Удалить элемент списка">
+            <button class="cart-delete-item" aria-label="Удалить элемент списка">Удалить элемент списка</button>
             <p class="cart-form-item">
               <img src="img/cart-item-orange.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
               <span class="cart-item-description">Пломбир с апельсиновым джемом</span>
               <span class="order-size">1,5 кг &times; <span class="price-per-kg">200 руб.</span></span>
               <span class="cart-item-price">300 руб.</span>
             </p>
-            <img src="img/icons/cross-small.svg" width="11" height="11" aria-label="Удалить элемент списка">
+            <button class="cart-delete-item" aria-label="Удалить элемент списка">Удалить элемент списка</button>
             <p class="cart-form-item">
               <img src="img/cart-item-strawberry.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
               <span class="cart-item-description">Клубничный пломбир с присыпкой из белого шоколада</span>
@@ -37,7 +37,7 @@
               <span class="cart-item-price">450 руб.</span>
             </p>
           </div>
-          <p class="cart-form-total"><b>Итого:750 руб.</b></p>
+          <p class="cart-form-total">Итого:750 руб.</p>
           <button class="button-orange button-order" type="submit">Оформить заказ</button>
         </form>
         <p class="schedule">c 10 до 20, ежедневно</p>
