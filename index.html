@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин мороженого Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   	<header class="main-header">
@@ -129,8 +132,8 @@
   			</article>
   			<article class="newsletter">
   				<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-  				<input class="enter-email" type="text" value="Электронная почта">
-  				<button class="button-orange button-submit" type ="submit" value = "Отправить"></button>
+  				<input class="enter-email" type="text" placeholder="Электронная почта">
+  				<button class="button-orange button-submit" type ="submit">Отправить</button>
   			</article>
   			<article class="map">
   				<img src="img/map.png" width="1200" height="430" alt="Карта">
@@ -169,8 +172,8 @@
           	<li><a class="social-button" href="#"><img src="img/icons/vk.svg" width="32" height="32" alt="ВК"></a></li>
         	</ul>
         	<div class="footer-documentation">
-          	<ul>
-            	<li><a class="docs" href="#"><img src="img/icons/heart.svg" width="15" height="13" alt="Сердечко">Для поставщиков</a></li>
+          	<ul class="documentation-links">
+            	<li><img src="img/icons/heart.svg" width="15" height="13" alt="Сердечко"><a class="docs docs-suppliers" href="#">Для поставщиков</a></li>
             	<li><a class="docs" href="#">О производстве</a></li>
             	<li><a class="docs" href="#">Наши документы</a></li>
             	<li><a class="docs" href="#">Экологические стандарты</a></li>
@@ -180,7 +183,7 @@
           	<a class="footer-button" href="https://htmlacademy.ru/intensive/htmlcss">
             	<img src="img/icons/logo-htmlacademy-small.svg" width="108" height="39" alt ="HTML Academy">
           	</a>
-          	<p>Сделано в HTML Academy &copy; 2017</p>
+          	<p>Сделано в <a class="website-link" href="#">HTML Academy</a> &copy; 2017</p>
         	</div>
       	</footer>
   		</main>
