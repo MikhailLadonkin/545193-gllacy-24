@@ -16,17 +16,9 @@ a{
   color: #ffffff;
 }
 a:hover{
-  color:#ffbc9e;
+  color: #ffbc9e;
 }
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6{
-  margin: 0;
-}
+
 .button{
   font: inherit;
   font-size: 700;
@@ -61,15 +53,12 @@ h6{
 .phone a{
   text-decoration: none;
 }
-
-/*TEMPORARY SOLUTION*/
 .catalog-menu{
   display: none;
 }
 .login-form{
   display: none;
 }
-/*TEMPORARY SOLUTION*/
 .user-navigation{
   font-size: 14px;
   line-height: 16px;
@@ -90,11 +79,71 @@ h6{
 }
 .user-navigation a:hover,
 .site-navigation a:hover{
-  color:#323232;
+  color: #323232;
+}
+.slider-heading{
+  width: 641px;
+
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+
+}
+.button-add-both{
+  width: 280px;
+
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+}
+.button-slider{
+  width: 21px;
+  height: 21px;
+
+  border-color: #ffffff;
+  border-radius: 50%;
+  background: none;
+}
+.special-raspberry{
+  width: 560px;
+  background-image: url("../img/special-rasp-background.jpg");
+}
+.special-chocolate{
+  width: 560px;
+  background-image: url("../img/special-choco-background.jpg");
+}
+.special-title{
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: left;
+}
+.special-text{
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: left;
+}
+.special-button{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+}
+.info{
+  width: 1146px;
+
+  background-image: url("../img/info-background.jpg");
+  border-radius: 15px;
 }
 .info-header{
-  width: 1146px;
-  height: 306px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
@@ -107,9 +156,6 @@ h6{
   font-weight: 400;
   color: #323232;
   text-align: left;
-
-  background-image: url("../img/info-background.jpg");
-  border-radius: 15px;
 }
 .blog{
   width: 560px;
@@ -192,7 +238,34 @@ h6{
   font-weight: 700;
   color: #ffffff;
 
-  text-align:left;
+  text-align: left;
+}
+ .filter-names{
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #ffffff;
+
+  text-align: left;
+}
+.filter-fat{
+  list-style: none;
+}
+.filter-fillers{
+  list-style: none;
+}
+.button-filter{
+  width: 144px;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+
+  background-color: #323232;
+  opacity: 0.2;
+  border-radius: 15px;
+  border: 2px solid #ffffff;
 }
 .catalog-list{
   list-style: none;
