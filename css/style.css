@@ -262,8 +262,7 @@ a:hover{
   font-weight: 500;
   color: #ffffff;
 
-  background-color: #323232;
-  opacity: 0.2;
+  background-color: rgba(255,255,255,0.2);
   border-radius: 15px;
   border: 2px solid #ffffff;
 }
@@ -290,4 +289,21 @@ a:hover{
   font-weight: 700;
   color: #ffffff;
   text-align: center;
+}
+.pagination-list{
+  list-style: none;
+}
+.pagination-list a{
+  text-decoration: none;
+}
+.pagination-back{
+  width: 8px;
+  height: 12px;
+
+  background-color: rgba(255,255,255,0.2);
+  opacity: 0.2;
+}
+.pagination-forward{
+  width: 8px;
+  height: 12px;
 }
