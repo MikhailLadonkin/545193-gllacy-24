@@ -19,9 +19,17 @@
           <li><a href="#">О компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li><a class="search" href="#"><img src="img/icons/search.svg" width="17" height="17" alt="Поиск">Поиск</a></li>
-          <li><a class="enter" href="#"><img src="img/icons/enter.svg" width="21" height="19" alt="Вход">Вход</a></li>
-          <li><a class="cart" href="#"><img src="img/icons/cart-red.svg" width="21" height="20" alt="Корзина">2 товара</a></li>
+          <div class="user-navigation-icons">
+          <li><a class="search" href="#"><img src="img/icons/search.svg" width="17" height="17" alt="Поиск"></a></li>
+          <li><a class="enter" href="#">Вход</a></li>
+          <li><a class="cart-inner" href="#">2 товара</a></li>
+        </div>
+          <div class="wrapper contact-info">
+      <section class="work-info">
+        <span class="schedule">С 10 до 20, ежедневно</span>
+        <span class="phone-inner"><a href="#">8 812 450-25-25</a></span>
+      </section>
+      </div>
         </ul>
         <form class="cart-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="cart-order">
@@ -47,10 +55,10 @@
     </header>
       <main class="container">
         <div class="wrapper">
-          <section class="work-info">
-            <p class="schedule">c 10 до 20, ежедневно</p>
+          <!-- <section class="work-info">
+            <p class="schedule">C 10 до 20, ежедневно</p>
             <p class="phone-inner"><a href="#">8 812 450 25-25</a></p>
-          </section>
+          </section> -->
           <ul class="breadcrumbs">
             <li><a href="index.html">Главная</a></li>
             <li><a href="inner.html">Каталог</a></li>
@@ -58,9 +66,9 @@
           </ul>
           <h1 class="page-title">Сливочное мороженое</h1>
           <section class="filter">
+            <div class="sort-items">
             <h2 class="filter-names"><label for="sort-field">Сортировка:</label></h2>
-            <select name="sort" id="sort-field">
-              <option value="popular">По популярности</option>
+            <select class="sort-field" name="sort" id="sort-field">
               <ul class="sort-menu">
                 <option selected value="sort-popular">по популярности</option>
                 <option value="sort-cheap">сначала недорогие</option>
@@ -68,8 +76,12 @@
                 <option value="sort-fat">по жирности</option>
               </ul>
             </select>
+            </div>
+            <div class="sort-price">
             <h2 class="filter-names"><label for="price-range">Цена: 100руб. - 500 руб.</label></h2>
             <input type="range" min="0" max="1000" step="50" value="100" id="price-range">
+           </div>
+           <div class="sort-fat">
             <h2 class="filter-names">Жирность</h2>
             <ul class="filter-fat">
               <li class="filter-fat-option">0%</li>
@@ -77,6 +89,8 @@
               <li class="filter-fat-option">до 30%</li>
               <li class="filter-fat-option">выше 30%</li>
             </ul>
+          </div>
+          <div class="sort-fillers">
             <h2 class="filter-names">Наполнители:</h2>
             <ul class="filter-fillers">
               <li class="filter-fillers-option">шоколадные</li>
@@ -85,6 +99,7 @@
               <li class="filter-fillers-option">сиропы</li>
               <li class="filter-fillers-option">джемы</li>
             </ul>
+          </div>
             <button class="button-filter">Применить</button>
           </section>
           <section class="catalog">
@@ -219,8 +234,8 @@
           </ul>
           <div class="footer-documentation">
             <ul class="documentation-links">
-              <li><a class="docs docs-suppliers" href="#"><img src="img/icons/heart.svg" width="15" height="13" alt="Сердечко">Для поставщиков</a></li>
-              <li><a class="docs" href="#">Наши документы</a></li>
+              <li><a class="docs docs-suppliers" href="#">Для поставщиков</a></li>
+              <li class="our-docs"><a class="docs" href="#">Наши документы</a></li>
               <li><a class="docs" href="#">О производстве</a></li>
               <li><a class="docs" href="#">Экологические стандарты</a></li>
             </ul>
