@@ -149,7 +149,8 @@ a:hover{
   font-weight: 500;
   color: #ffffff;
 }
-.user-navigation a:hover{
+.user-navigation a:hover,
+.user-navigation-inner a:hover{
   background-color: #f7f6f3;
   color:#333;
 }
@@ -168,6 +169,9 @@ a:hover{
   font-weight: 500;
   color: #ffffff;
   list-style: none;
+}
+.user-navigation-inner a{
+  text-decoration: none;
 }
 .user-navigation-icons{
   display: flex;
@@ -188,14 +192,17 @@ a:hover{
   margin-bottom: 24px;
 }
 .search{
+  display: block;
   padding: 7px;
 
   background-color: rgba(255,255,255,0.2);
   border-radius: 50%;
 }
-.search img{
-  position: relative;
-  top: 2px;
+.user-search{
+  display: block;
+}
+.search:hover path{
+  fill: #323232;
 }
 .enter{
   position: relative;
@@ -207,19 +214,13 @@ a:hover{
   background-color: rgba(255,255,255,0.2);
   border-radius: 20px;
 }
-.enter::before{
-  content: "";
-
+.user-enter{
   position: absolute;
   top: 7px;
   left: 16px;
-
-  width: 21px;
-  height: 19px;
-
-  background-image: url("../img/icons/enter.svg");
-  background-repeat: no-repeat;
-
+}
+.enter:hover path{
+  fill: #323232;
 }
 .cart{
   position: relative;
@@ -232,19 +233,14 @@ a:hover{
   background-color: rgba(255,255,255,0.2);
   
 }
-.cart::before{
-  content: "";
-
+.user-cart{
   position: absolute;
   top: 7px;
   left: 15px;
-
-  width: 21px;
-  height: 19px;
-
-  background-image: url("../img/icons/cart.svg");
-  background-repeat: no-repeat;
-
+}
+.cart:hover path,
+.cart:hover circle{
+  fill: #323232;
 }
 .cart-inner{
   position: relative;
@@ -254,7 +250,8 @@ a:hover{
   font-size: 14px;
   line-height: 16px;
   border-radius: 20px;
-  background-color: rgba(255,255,255,0.2);
+  background-color: #fff;
+  color: #323232;
 }
 .cart-inner::before{
   content: "";
@@ -315,7 +312,8 @@ a:hover{
   color: #323232;
   border-radius: 20px;
 }
-.phone a:hover{
+.phone a:hover,
+.phone-inner a:hover{
   color:#ffbc9e;
   background:none;
 }
@@ -726,16 +724,25 @@ a:hover{
 }
 .social-list li{
   padding-right: 15px;
-
-  opacity: 0.5;
 }
-.social-list img{
+.social-list svg{
   display: block;
   border: 3px solid rgba(255,255,255,0.5);
   border-radius: 50%; 
 }
+.social-button svg{
+  fill: #fff;
+  opacity: 0.7;
+}
+.social-button:hover svg{
+  fill: #fff;
+  opacity: 1;
+}
 .social-list a{
   display: block;
+}
+.social-button:hover path{
+  fill: rgba(255,255,255,0.9);
 }
 .documentation-links{
   position: relative;
@@ -974,21 +981,49 @@ a:hover{
   flex-direction: row;
   justify-content: flex-end;
   margin-bottom: 35px;
-
+  padding-left: 0;
+}
+.pagination-list-elements{
+  display:flex;
+  width: 190px;
+  justify-content: space-around;
   list-style: none;
+  padding-left: 0;
 }
 .pagination-list a{
-  padding-left: 25px;
   text-decoration: none;
 }
 .pagination-back{
   height: 12px;
-  padding-right: 25px;
   width: 8px;
   opacity: 0.2;
-  
 }
 .pagination-forward{
   width: 8px;
   height: 12px;
 }
+.pagination-item-current{
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.pagination-item-current a{
+  color: #323232;
+}
+.pagination-item a{
+  padding: 3px 7px;
+}
+.pagination-item:hover{
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 50%;
+}
+.pagination-item a:hover{
+color: #ffffff;
+}
+.pagination-item:active{
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.pagination-item a:active{
+  color: #323232;
+}
+
