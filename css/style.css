@@ -36,7 +36,11 @@ a:hover{
   background-color: #849d8f;
   background-image: url("../img/slider-background.png");
   background-repeat: no-repeat;
-  background-position: 64% 0%;
+  background-position: 50% 0%;
+}
+.inner-wrapper{
+  width: 1200px;
+  margin: 0 auto;
 }
 .button{
   font: inherit;
@@ -706,6 +710,10 @@ a:hover{
   align-items: center;
   width: 1177px;
 }
+.footer-inner{
+  border-top: 1px solid rgba(255,255,255,0.3);
+  padding-top: 18px;
+}
 .main-footer .social-list{
   display: flex;
   flex-direction: row;
@@ -957,6 +965,7 @@ a:hover{
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  margin-bottom: 35px;
 
   list-style: none;
 }
