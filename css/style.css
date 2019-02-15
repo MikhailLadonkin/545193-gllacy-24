@@ -31,7 +31,8 @@ a:hover{
   color: #ffbc9e;
 }
 .site-wrapper {
-  min-width: 940px;
+  width: 1200px;
+  margin: 0 auto;
   background-color: #849d8f;
   background-image: url("../img/slider-background.png");
   background-repeat: no-repeat;
@@ -51,10 +52,25 @@ a:hover{
   box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
   background-image: linear-gradient(to top, #e74a35, #f26843);
 }
+.button-orange:hover{
+  box-shadow: 0px 2px 2px 0 #ac1000;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(to top, #e74a35, #f26843);
+}
+.button-orange:active{
+  box-shadow: inset 0px 2px 2px 0 #942718;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(to bottom, #e74a35, #f26843);
+}
 .site-navigation{
   line-height: 18px;
   font-weight: 700;
   color: #ffffff;
+}
+.site-navigation a{
+  padding: 7px 14px;
+  text-decoration: none;
+}
+.nav-label{
+  border-bottom: 1px solid rgba(255,255,255,.4);
 }
 .main-header{
   width: 1150px;
@@ -89,12 +105,13 @@ a:hover{
 }
 .site-navigation{
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 350px;
-  height: 65px;
+  width: 380px;
   margin-left: 23px;
+  padding-top: 23px;
 
   line-height: 16px;
 }
@@ -119,8 +136,7 @@ a:hover{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 246px;
-  height: 65px;
+  width: 248px;
   padding-top: 2px;
 
   margin-left: auto;
@@ -129,14 +145,43 @@ a:hover{
   font-weight: 500;
   color: #ffffff;
 }
+.user-navigation a:hover{
+  background-color: #f7f6f3;
+  color:#333;
+}
+.user-navigation-inner{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 262px;
+  padding-top: 2px;
+
+  margin-left: auto;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  list-style: none;
+}
 .user-navigation-icons{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 262px;
-    margin-top: 18px;
-    margin-bottom: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 248px;
+  margin-top: 18px;
+  margin-bottom: 24px;
+}
+.user-navigation-icons-inner{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 262px;
+  margin-top: 5px;
+  margin-bottom: 24px;
 }
 .search{
   padding: 7px;
@@ -256,9 +301,19 @@ a:hover{
   color: #ffffff;
 
 }
-.user-navigation a:hover,
-.site-navigation a:hover{
+.user-navigation a:hover{
   color: #323232;
+}
+.site-navigation a:hover{
+  width: 87px;
+  height: 32px;
+  background: #f7f6f3;
+  color: #323232;
+  border-radius: 20px;
+}
+.phone a:hover{
+  color:#ffbc9e;
+  background:none;
 }
 .slider{
   width: 1150px;
@@ -840,7 +895,15 @@ a:hover{
   display: flex;
   flex-direction: column;
   width: 267px;
+  min-height: 324px;
   position: relative;
+}
+.catalog-item:hover{
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  background-color: rgba(248,247,244,.2);
+}
+.catalog-item:hover .button-catalog{
+  display: block;
 }
 .catalog-item h4{
     margin: 0;
@@ -874,6 +937,21 @@ a:hover{
   font-weight: 700;
   color: #ffffff;
   text-align: center;
+}
+.button-catalog{
+  position: absolute;
+  bottom: -55px;
+  left: 30px;
+  display: none;
+  padding: 10px 20px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  border-radius: 30px;
+  border: none;
 }
 .pagination-list{
   display: flex;
