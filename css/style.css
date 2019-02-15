@@ -579,9 +579,9 @@ a:hover{
   box-sizing: border-box;
   padding: 31px 33px;
 
+  border: 5px solid #323232;
   background-color: #f8f7f4;
-  border-image: url("../img/post-background.png");
-  border: 2px;
+  border-image: url("../img/post-background.png") 5 round round;
   border-radius: 10px;
 }
 .newsletter p{
@@ -598,13 +598,10 @@ a:hover{
 .enter-email{
   width: 348px;
   height: 40px;
-  padding-left: 10px;
+  padding-left: 8px;
 }
 .button-newsletter{
-  width: 114px;
-  height: 45px;
-  margin-left: 10px;
-  padding: 0;
+  padding: 13px 19px;
 }
 .map{
   position: relative;
@@ -918,7 +915,7 @@ a:hover{
   display: flex;
   flex-direction: column;
   width: 267px;
-  min-height: 324px;
+  min-height: 405px;
   position: relative;
 }
 .catalog-item:hover{
@@ -963,7 +960,7 @@ a:hover{
 }
 .button-catalog{
   position: absolute;
-  bottom: -55px;
+  bottom: 23px;
   left: 30px;
   display: none;
   padding: 10px 20px;
