@@ -71,7 +71,7 @@
             <h2 class="filter-names"><label for="sort-field">Сортировка:</label></h2>
             <div class="filters-background">
             <select class="sort-field sort-menu" name="sort" id="sort-field">
-                <option selected value="sort-popular">по популярности</option>
+                <option value="sort-popular">по популярности</option>
                 <option value="sort-cheap">сначала недорогие</option>
                 <option value="sort-expensive">сначала дорогие</option>
                 <option value="sort-fat">по жирности</option>
@@ -88,10 +88,34 @@
             <h2 class="filter-names">Жирность</h2>
             <div class="filters-background">
             <ul class="filter-fat">
-              <li class="filter-fat-option">0%</li>
-              <li class="filter-fat-option">до 10%</li>
-              <li class="filter-fat-option">до 30%</li>
-              <li class="filter-fat-option">выше 30%</li>
+              <li class="filter-fat-option">
+                <label class="filter-radio">
+                <input type="radio" name="no-fat" class="visually-hidden">
+                <span class="radio-indicator"></span>
+                <p>0%</p>
+                </label> 
+              </li>
+              <li class="filter-fat-option">
+              <label class="filter-radio">
+                <input type="radio" name="less-than-ten" class="visually-hidden">
+                <span class="radio-indicator"></span>
+                <p>до 10%</p>
+                </label> 
+              </li>
+              <li class="filter-fat-option">
+              <label class="filter-radio">
+                <input type="radio" name="less-than-thirty" class="visually-hidden" >
+                <span class="radio-indicator"></span>
+                <p>до 30%</p>
+                </label>
+              </li>
+              <li class="filter-fat-option">
+              <label class="filter-radio">
+                <input type="radio" name="more-than-thirty" class="visually-hidden">
+                <span class="radio-indicator"></span>
+                <p>выше 30%</p>
+                </label>
+              </li>
             </ul>
           </div>
           </div>
@@ -99,11 +123,41 @@
             <h2 class="filter-names">Наполнители:</h2>
             <div class="filters-background">
             <ul class="filter-fillers">
-              <li class="filter-fillers-option">шоколадные</li>
-              <li class="filter-fillers-option">сахарные присыпки</li>
-              <li class="filter-fillers-option">фрукты</li>
-              <li class="filter-fillers-option">сиропы</li>
-              <li class="filter-fillers-option">джемы</li>
+              <li class="filter-fillers-option">
+                <label class="filter-checkbox">
+                <input type="checkbox" name="choco" class="visually-hidden" checked>
+                <span class="checkbox-indicator"></span>
+                <p>шоколадные</p>
+                </label> 
+              </li>
+              <li class="filter-fillers-option">
+              <label class="filter-checkbox">
+                <input type="checkbox" name="sugar" class="visually-hidden" checked>
+                <span class="checkbox-indicator"></span>
+                <p>сахарные присыпки</p>
+                </label> 
+              </li>
+              <li class="filter-fillers-option">
+              <label class="filter-checkbox">
+                <input type="checkbox" name="fruits" class="visually-hidden">
+                <span class="checkbox-indicator"></span>
+                <p>фрукты</p>
+                </label> 
+              </li>
+              <li class="filter-fillers-option">
+              <label class="filter-checkbox">
+                <input type="checkbox" name="syrup" class="visually-hidden">
+                <span class="checkbox-indicator"></span>
+                <p>сиропы</p>
+                </label> 
+              </li>
+              <li class="filter-fillers-option">
+              <label class="filter-checkbox">
+                <input type="checkbox" name="jam" class="visually-hidden">
+                <span class="checkbox-indicator"></span>
+                <p>джемы</p>
+                </label>
+              </li>
             </ul>
           </div>
           </div>
@@ -245,6 +299,7 @@
             </ul>
             </div>
           </section>
+            </div>
         </main>
         <footer class="main-footer footer-inner">
           <ul class="social-list">
@@ -269,7 +324,5 @@
           </div>
         </footer>
       </div>
-    </main>
-  </div>
   </body>
 </html>
