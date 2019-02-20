@@ -1,9 +1,4 @@
-/*html{ 
-  box-sizing: border-box; 
-}
-*, *::before, *::after{ 
-  box-sizing: inherit;
-}*/
+
 body{
   margin: 0;
   padding:0;
@@ -15,15 +10,24 @@ body{
   color: #323232;
 
   background-color: #849d8f;
- /* background-image: url("../img/slider-background.jpg");*/
   background-position: top center;
   background-repeat: no-repeat;
 }
-/*TEMPORARY*/
 .visually-hidden{
-  display: none;
+   position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
-/*TEMPORARY*/
 a{
   color: #ffffff;
 }
@@ -127,7 +131,33 @@ a:hover{
   line-height: 16px;
 }
 .search-form{
+  position: absolute;
+  right: 0;
+  top: 47px;
   display: none;
+  margin: 0;
+  padding: 0;
+  padding: 20px 15px;
+
+  border-radius: 5px;
+  list-style: none;
+  background-color: #f8f7f4;
+}
+.search-form input{
+  width: 300px;
+  padding: 9px;
+
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  font: inherit;
+  background-color: #ffffff;
+  color: #323232;
+}
+.search-item{
+  position: relative;
+}
+.search-item:hover .search-form{
+  display: block;
 }
 .catalog-menu{
   display: none;
@@ -328,6 +358,61 @@ a:hover{
   color: #323232;
   border-radius: 20px;
 }
+.catalog-site-navigation:hover .catalog-menu{
+  display: block;
+}
+.catalog-menu{
+  position: absolute;
+  top: 45px;
+  left: -6px;
+  z-index: 1;
+  display: none;
+  min-width: 143px;
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+  background-color: #f8f7f4;
+}
+
+.catalog-menu p{
+  display: block;
+  margin: 0;
+  padding: 10px 0px 12px 19px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+  color: #323232;
+  border-bottom: 1px solid #d1d0ce;
+}
+
+.catalog-menu a{
+  display: block;
+  padding: 9px 0px 6px 19px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  color: #323232;
+  border: none;
+}
+
+.catalog-menu .active{
+  color: #ffffff;
+  background-color: rgb(208, 112, 88);
+}
+
+.catalog-menu a:hover,
+.catalog-menu a:focus{
+  background-color: rgba(208, 112, 88, 0.2);
+}
+
+.catalog-menu a:active{
+  background-color: rgba(208, 112, 88, 0.5);
+}
+
+.catalog-menu li:last-child{
+  margin-bottom: 8px;
+}
+
 .phone a:hover,
 .phone-inner a:hover{
   color:#ffbc9e;
@@ -1113,6 +1198,7 @@ a:hover{
   left: 30px;
   display: none;
   padding: 10px 20px;
+  z-index: 11;
 
   font-size: 18px;
   line-height: 24px;
@@ -1121,6 +1207,7 @@ a:hover{
   color: #fff;
   border-radius: 30px;
   border: none;
+  text-decoration: none;
 }
 .pagination-list{
   display: flex;
@@ -1176,4 +1263,5 @@ color: #ffffff;
 .footer-button img{
   margin-top: 2px;
 }
+
 
