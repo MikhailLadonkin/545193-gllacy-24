@@ -173,8 +173,8 @@ img{
 }
 .login-form{
   position: absolute;
-  right: 88px;
-  top: 62px;
+  right: 0px;
+  top: 30px;
   display: none;
   padding: 20px 17px 22px 19px;
 
@@ -531,6 +531,9 @@ img{
 .enter:hover path{
   fill: #323232;
 }
+.user-login{
+  position: relative;
+}
 .user-login:hover .login-form{
   display: block;
 }
@@ -635,9 +638,15 @@ img{
   color: #323232;
   border-radius: 20px;
 }
+
+.catalog-header{
+  position: relative;
+}
+.catalog-header:hover .catalog-menu{
+  display: block;
+}
 .catalog-menu{
   position: absolute;
-  top: 60px;
   z-index: 2;
   display: none;
   min-width: 143px;
@@ -687,10 +696,6 @@ img{
 .catalog-menu li:last-child{
   margin-bottom: 8px;
 }
-.catalog-header:hover .catalog-menu{
-  display: block;
-}
-
 .phone a:hover,
 .phone-inner a:hover{
   color:#ffbc9e;
@@ -738,7 +743,7 @@ img{
   height: 21px;
   margin-right: 4px;
 
-  border-color: #ffffff;
+  border:2px solid #ffffff;
   border-radius: 50%;
   background: none;
 }
@@ -1120,6 +1125,9 @@ img{
 .social-button:hover path{
   fill: rgba(255,255,255,0.9);
 }
+.social-button:active path{
+  fill: rgba(255,255,255,0.7);
+}
 .documentation-links{
   position: relative;
   display: flex;
@@ -1191,6 +1199,9 @@ img{
 .breadcrumbs a{
   text-decoration: none;
 }
+.breadcrumbs .breadcrumbs-current:hover{
+  color: #ffffff;
+}
 .page-title{
   margin: 0px;
   margin-bottom: 25px;
@@ -1214,10 +1225,13 @@ img{
   display: flex;
   justify-content: space-between;
 }
+.sort-popular-block{
+  position: relative;
+}
 .icon-down{
   position: absolute;
-  left: 200px;
-  top: 222px;
+  left: 160px;
+  top: 15px;
   z-index: 1;
 }
 .filters-background{
@@ -1248,6 +1262,12 @@ img{
   -webkit-appearance: none;
   background-color: transparent;
   border: none;
+}
+.sort-field:hover{
+  color: #323232;
+}
+.sort-field:hover + .icon-down path{
+  fill: #323232;
 }
 .sort-price input{
   width: 176px;
@@ -1531,7 +1551,6 @@ img{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
   padding-left: 0px;
   margin: 0px;
   margin-bottom: 25px;
@@ -1556,7 +1575,11 @@ img{
   width: 267px;
   min-height: 324px;
   margin-bottom: 38px;
+  margin-right: 26px;
   position: relative;
+}
+.catalog-item:nth-child(4n){
+  margin-right: 0px;
 }
 .catalog-item::after{
     position: absolute;
@@ -1599,8 +1622,9 @@ img{
   z-index: 12;
 }
 .catalog-item-best:hover .button-catalog-best{
+  color: #ffffff;
   display: block;
-}
+} 
 .catalog-item h4{
     margin: 0;
     padding-top: 11px;
@@ -1723,6 +1747,10 @@ img{
   height: 12px;
   width: 8px;
   opacity: 0.2;
+}
+.pagination-list-elements .back:hover,
+.pagination-list-elements .forward:hover{
+  background: none;
 }
 .pagination-forward{
   width: 8px;
